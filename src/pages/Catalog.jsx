@@ -37,7 +37,7 @@ export default function Catalog() {
     if (!nextPage) return
     setLoading(true)
     try {
-      const res = await fetch(`${nextPage}&token=YOUR_KODIK_TOKEN&with_material_data=true`)
+      const res = await fetch(`${nextPage}&token=ecc052e27cd7c4fe1c781701a2f574a6&with_material_data=true`)
       const data = await res.json()
       setItems(p => [...p, ...(data?.results || [])])
       setNextPage(data?.next_page || null)
