@@ -1,6 +1,6 @@
 // ⚠️ Замени TOKEN на свой токен с kodikres.com
 const TOKEN = 'ecc052e27cd7c4fe1c781701a2f574a6'
-const BASE = 'https://kodikapi.com'
+const BASE = 'https://kodik-api.com'
 
 const request = async (endpoint, params = {}) => {
   const url = new URL(`${BASE}${endpoint}`)
